@@ -1,11 +1,7 @@
 #include "widget.h"
-#include "getprocessbyname.h"
-#include "getcommandline.h"
-#include "recursivesearch.h"
 
 #include <QApplication>
-#include <QTableWidget>
-#include <QString>
+
 
 
 int indexOfPathsList(QString string)
@@ -50,8 +46,9 @@ int main(int argc, char *argv[])
     {
 
         PWSTR buf;
-        get_cmd_line(dwId, buf);
-
+        int error =  get_cmd_line(dwId, buf);
+        if (error != 0)
+            return a.exec();
         QString string = QString::fromWCharArray(buf);
 
         int endOf = string.indexOf("\"", 1);

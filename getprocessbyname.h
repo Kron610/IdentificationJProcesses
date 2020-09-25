@@ -7,7 +7,6 @@
 #include <cstring>
 #include <vector>
 
-
 std::vector<DWORD> GetProcessByName(const wchar_t* pName, const wchar_t* pName2);
 
 #endif // GETPROCESSBYNAME_H

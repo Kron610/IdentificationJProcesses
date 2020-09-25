@@ -1,7 +1,15 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
+
+#include "getprocessbyname.h"
+#include "getcommandline.h"
+#include "recursivesearch.h"
+
+
 #include <QWidget>
+#include <QTableWidget>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
